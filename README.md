@@ -34,6 +34,7 @@ First, we need rename the default task start to start-front, and add start-serve
 And add new task start: currently npm run start-server npm start-front --kill others
 
 this is the scripts look like:
+`
 "scripts": {
   "build": "node ./buildScript",
   "start-server": "cross-env NODE_ENV=development nodemon server/server.js --watch server/*",
@@ -43,3 +44,4 @@ this is the scripts look like:
   "test": "react-scripts test",
   "start": "concurrently \"npm run start-server\" \"npm run start-front\" --kill-others"
 }
+`
